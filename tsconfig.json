@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/utils/constant.js",
+    "src/app/components/aceternity-ui/sticky-scroll-reveal/index.tsx",
+    "src/app/components/aceternity-ui/timeline/index.tsx",
+    "src/app/sections/projects/widget/smooth-scroll/index.tsx",
+    "src/app/sections/app-pages/project/index.tsx"
+, "src/app/pages/test/page.jsx", "src/app/mocks/_mockSkills.tsx"  ],
+  "exclude": ["node_modules"]
+}

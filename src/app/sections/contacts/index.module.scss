@@ -1,0 +1,111 @@
+.email {
+  background-clip: var(--secondary-color);
+  background: var(--secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    top: 20px;
+    background: var(--gradient-bg-primary);
+    transition: all 0.5s;
+  }
+}
+
+.sub_title_h {
+  position: relative;
+  font-weight: 500;
+  width: fit-content;
+  margin-bottom: 60px;
+  font-size: 1rem;
+}
+
+.input_with_placeholder {
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 300ms all;
+    z-index: -1;
+    font-size: 1rem;
+  }
+
+  input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    z-index: 1;
+    outline: none;
+    border: transparent;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 1rem;
+    border-radius: 0px;
+  }
+}
+
+.input_with_placeholder input:focus + label,
+.input_with_placeholder input:valid + label {
+  height: 50%;
+  transform: translateY(-100%);
+  font-size: 0.8rem;
+  color: var(--hljs-color-quote);
+  border-radius: 0px;
+}
+
+.text_area_with_placeholder {
+  position: relative;
+  border: none;
+  outline: none;
+  height: 60px;
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: 300ms all;
+    z-index: -1;
+  }
+
+  textarea {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    z-index: 1;
+    outline: none;
+    border: transparent;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--primary-color);
+    font-size: 1rem;
+    padding: 0;
+    transition: 300ms all;
+    min-height: 80px;
+  }
+}
+
+.text_area_with_placeholder textarea:focus + label,
+.text_area_with_placeholder textarea:valid + label {
+  height: 50%;
+  transform: translateY(-100%);
+  font-size: 0.8rem;
+  color: var(--hljs-color-quote);
+}

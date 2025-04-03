@@ -1,0 +1,42 @@
+#loader_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9990;
+  overflow: hidden;
+  background-color: white;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animText {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-top: 150px;
+  opacity: 1;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-indent: 0.35em;
+  text-align: center;
+}
+
+.animText_letter {
+  display: inline-block;
+  margin-top: 25px;
+  opacity: 0;
+}

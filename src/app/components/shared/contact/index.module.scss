@@ -1,0 +1,38 @@
+.get_in_touch__link {
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: var(--primary-color);
+
+  &:hover {
+    &:before {
+      background: var(--gradient-bg-primary);
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 11px;
+    bottom: -10px;
+    left: 0;
+    background: #03030f;
+    transform: translateX(-25%);
+    opacity: 0.2;
+    animation: slide 8s linear infinite;
+    mask: url(https://ronasit.com/_next/static/media/underline-3.cf6fc523.svg);
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
